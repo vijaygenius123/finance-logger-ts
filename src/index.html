@@ -7,8 +7,36 @@
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <title>Finance Logger</title>
 </head>
-<body class="p-8">
+<body class="flex flex-col">
 <h1 class="text-purple-500 text-2xl text-center">Finance Logger</h1>
+<div class="m-4">
+    <ul class="list-none"></ul>
+</div>
+<div class="my-4">
+    <form class="w-full flex flex-row flex-wrap bg-gray-400 justify-around p-8 items-center" autocomplete="off" >
+        <div class="field">
+            <label for="type">Type</label>
+            <select id="type">
+                <option value="invoice">Invoice</option>
+                <option value="payment">Payment</option>
+            </select>
+        </div>
+        <div class="field">
+            <label for="tofrom">To / From:</label>
+            <input id="tofrom" type="text" autocomplete="off">
+        </div>
+        <div class="field">
+            <label>Details:</label>
+            <input id="details" type="text">
+        </div>
+        <div class="field">
+            <label>Amount (£):</label>
+            <input id="amount" type="number">
+        </div>
+        <button class="bg-purple-500 hover:bg-purple-400 text-white font-bold py-2 px-4 rounded">Add
+        </button>
+    </form>
+</div>
 <script src="./bundle.js"></script>
 </body>
 </html>
